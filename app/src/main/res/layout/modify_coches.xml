@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMatriculaMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF1F1"
+        android:text="@string/Matricula"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txVMatriculaModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1DCDC"
+        android:editable="false"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvMarcaMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF1F1"
+        android:text="@string/Modelo"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etxtModeloModify"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="#F1DCDC"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvModeloMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF1F1"
+        android:text="@string/Marca"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etxtMarcaModify"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="#F1DCDC"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvPrecioMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF1F1"
+        android:text="@string/Precio"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etxtPrecioModify"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#F1DCDC"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5E00BCD4">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            app:backgroundTint="#E8AAA1A1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

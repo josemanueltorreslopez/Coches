@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Coches</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Matricula">Matricula</string>
+    <string name="Modelo">Modelo</string>
+    <string name="Marca">Marca</string>
+    <string name="Precio">Precio</string>
+</resources>

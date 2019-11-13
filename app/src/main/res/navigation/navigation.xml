@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/principal">
+    <fragment
+        android:id="@+id/principal"
+        android:name="com.example.coches.Principal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principal_to_addCoches"
+            app:destination="@id/addCoches" />
+        <action
+            android:id="@+id/action_principal_to_modifyCoches"
+            app:destination="@id/modifyCoches" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCoches"
+        android:name="com.example.coches.AddCoches"
+        android:label="AddCoches" />
+    <fragment
+        android:id="@+id/modifyCoches"
+        android:name="com.example.coches.ModifyCoches"
+        android:label="ModifyCoches" >
+        <argument android:name="Matricula" />
+        <argument android:name="Modelo" />
+        <argument android:name="Marca" />
+        <argument android:name="Precio" />
+    </fragment>
+</navigation>
